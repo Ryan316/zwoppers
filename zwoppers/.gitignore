@@ -1,0 +1,22 @@
+# System and application files
+.DS_Store
+.idea
+
+# Runtime files
+.sass-cache
+.tmp
+
+# Dev config files
+local.env.js
+
+# Compiled folders
+dist
+public
+
+# Logs
+logs
+*.log
+
+# Dependency folders
+bower_components
+node_modules

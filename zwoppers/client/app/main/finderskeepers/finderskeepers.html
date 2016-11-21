@@ -1,0 +1,38 @@
+<!-- nav -->
+<div class="column col-sm-12 col-xs-12" id="main">
+    <div class="navbar navbar-blue navbar-static-top" ng-include="'../../components/navbar/navbar.html'"></div>
+</div>
+<!-- /nav -->
+<div class="finderskeepers-wrapper">
+    <!-- snap drawer -->
+    <snap-drawers>
+        <snap-drawer>
+            <div id="finderskeepers-banner-drawer" class="container drawer">
+            <div id="finderskeepers-picture-drawer">
+                <div class="finderskeepers-picture finderskeepers">Profile Image</div>
+                <div class="finderskeepers-name finderskeepers">Ryan Damasco</div>
+            </div>
+        </div>
+        </snap-drawer>
+        <div snap-drawer="right">
+            <p>Hello from the right drawer!</p>
+        </div>
+    </snap-drawers>
+    <!-- /snap drawer -->
+
+    <!-- main content -->
+    <snap-content>
+        <div class="container">
+        	<div id="search-container">
+			    <div>
+			        <item-card item="item" ng-repeat="item in FindersKeepersController.featuredItems"></item-card>
+			    </div>
+
+			    <div>
+			        <item-card item="item" ng-repeat="item in FindersKeepersController.regularItems"></item-card>
+			    </div>
+			</div>
+        </div>
+    </snap-content>
+    <!-- /main content -->
+</div>

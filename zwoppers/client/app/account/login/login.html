@@ -1,0 +1,43 @@
+<div class="backgroundContainer" ng-hide="MasterController.isLoggedIn()">
+    <div class="backgroundImage"></div>
+    <div class="container vertical-center">
+        <div class="col-sm-12">
+            <form class="form" name="form" ng-submit="LoginCtrl.login(form)" novalidate>
+                <div class="">
+                    <input type="email" placeholder="Email" name="email" class="form-control inputFieldsFP" ng-model="LoginCtrl.user.email" required>
+                </div>
+                <div class="">
+                    <input type="password" placeholder="Password" name="password" class="form-control inputFieldsFP" ng-model="LoginCtrl.user.password" required>
+                </div>
+                <div class=" has-error">
+                    <p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && LoginCtrl.submitted">Please enter your email and password.</p>
+                    <p class="help-block" ng-show="form.email.$error.email && LoginCtrl.submitted">Please enter a valid email.</p>
+                    <p class="help-block" ng-show="LoginCtrl.errors.other">{{ LoginCtrl.errors.other }}</p>
+                </div>
+                <div>
+                    <button class="landing-submit" type="submit">Log In</button> 
+<!--                     <a class="btn btn-default btn-lg btn-register" href="" ui-sref="signup">
+                        Register
+                    </a> -->
+                </div>
+                <hr>
+                <div class="social-container">
+                    <a class="btn btn-facebook" href="" ng-click="LoginCtrl.loginOauth('facebook')">
+                        <i class="fa fa-facebook"></i> Connect with Facebook
+                    </a>
+                    <a class="btn btn-google-plus" href="" ng-click="LoginCtrl.loginOauth('google')">
+                        <i class="fa fa-google-plus"></i> Connect with Google+
+                    </a>
+                    <a class="btn btn-twitter" href="" ng-click="LoginCtrl.loginOauth('twitter')">
+                        <i class="fa fa-twitter"></i> Connect with Twitter
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Logged in -->
+<div ng-if="MasterController.isLoggedIn()" class="main-app-wrapper">
+    <div ng-include="'app/main/home/home.html'"></div>
+</div>

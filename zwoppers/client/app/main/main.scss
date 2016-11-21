@@ -1,0 +1,204 @@
+body {
+    color: #333;
+    font-family: "Roboto",UILanguageFont,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-rendering: optimizelegibility;
+}
+
+.frontpageBG {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: none;
+}
+
+#banner {
+    border-bottom: none;
+    margin-top: -20px;
+}
+
+#banner h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.hero-unit {
+    position: relative;
+    padding: 30px 15px;
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+}
+
+/* global styles starts here */
+
+.backgroundContainer {
+    position: relative;
+    z-index: 5;
+    transition: bottom 0.3s ease-out 1.7s;
+}
+
+.backgroundImage {
+    background-image: url('/assets/images/landingPage/zwopFront.jpeg');
+    background-position: 50% 50%;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    content: "";
+    opacity: 0.9;
+    z-index: -1;
+    transition: bottom 0.3s ease-out 1.7s;
+}
+
+.backgroundImage:before {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: none;
+}
+
+.backgroundImage:before {
+    background: url("/assets/images/landingPage/vignetter.png") repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.9;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.help-block {
+    text-align: center;
+    padding: 12px 13px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff !important;
+    background: #000;
+    background: rgba(0,0,0,0.33);
+    margin-bottom: 5px;
+}
+
+.vertical-center {
+    min-height: 85%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 85vh;  /* These two lines are counted as one :-)      */
+    width: 360px;
+    display: flex;
+    align-items: center;
+}
+
+.landing-submit {
+    background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%) repeat scroll 0 0 #33bdef;
+    border: 1px solid #057fd0;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    outline: medium none;
+    padding-bottom: 2px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.32);
+    width: 300px;
+}
+
+.social-container {
+    text-align: center;
+    a {
+        margin-bottom: 2px;
+        width: 240px;
+    }
+}
+
+.inputFieldsFP {
+    height: 40px;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin: 0;
+}
+
+.drawer {
+    margin-top: 50px;
+}
+
+.snap-content {
+    background-color: #eeeeee;
+}
+
+/* custom group classes */
+
+.btn-search-height {
+    height: 34px;
+}
+
+.search-span {
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 0;
+    background-color: #FFF;
+}
+
+.search-form-control {
+    font-size: 12px;
+    padding-left: 5px;
+    background-color: #FFF;
+    box-shadow: none;
+    border-left: none;
+    margin-right: 90px;
+}
+
+.input-group-margin-right {
+    margin-right: 20px;
+}
+
+.custom-input-invisible-border {
+    height: 32px;
+    width: 99% !important;
+    border: 0;
+}
+
+.wrapper-custom-input-invisible-border {
+    background-color: #FFF;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+}
+
+.wrapper-custom-input-invisible-border-no-radius {
+    background-color: #FFF;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.header-search-container {
+    text-align: center;
+    display: none;
+    form {
+        margin: 0;
+        padding: 7px;
+    }
+}
+
+
+
+/* main styles starts here */
+
+
+
+
